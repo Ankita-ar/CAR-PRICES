@@ -10,7 +10,7 @@ with open ('final_model_gbm.pkl', 'rb') as file:
 def prediction(input_data):
     input_data = np.array(input_data, dtype='object')
 
-    pred = model.predict(input_data)[0]
+    pred = model.predict(input_data)
     
     if pred>0.5:
         return f' The price of car is more likely to be high : Price = {round(pred)}'
