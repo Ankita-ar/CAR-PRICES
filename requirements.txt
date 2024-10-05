@@ -1,4 +1,0 @@
-gradient boost regressor
-pandas
-numpy
-pickle
